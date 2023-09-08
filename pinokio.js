@@ -10,7 +10,7 @@ module.exports = {
   icon: "icon.png",
   menu: async (kernel) => {
     let installed = await exists(path.resolve(__dirname, "facefusion", "env"))
-    let conda_installed = await exists(path.resolve(__dirname, "facefusion", "env"))
+    let conda_installed = await exists(path.resolve(__dirname, "facefusion", "conda_env"))
     if (installed) {
       let session = (await kernel.loader.load(path.resolve(__dirname, "session.json"))).resolved
       return [{
