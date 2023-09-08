@@ -21,7 +21,7 @@
   }, {
     "method": "shell.enter",
     "params": {
-      "message": "conda create -y -p {{path.resolve(cwd, 'conda_env')}}",
+      "message": "conda create -y -p {{path.resolve(cwd, 'facefusion', 'conda_env')}}",
       "on": [{
         "event": null,
         "return": true
@@ -30,7 +30,7 @@
   }, {
     "method": "shell.enter",
     "params": {
-      "message": "conda activate {{path.resolve(cwd, 'conda_env')}}",
+      "message": "conda activate {{path.resolve(cwd, 'facefusion', 'conda_env')}}",
       "on": [{
         "event": null,
         "return": true
